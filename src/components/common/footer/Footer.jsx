@@ -3,6 +3,7 @@ import { footer } from "../../data/Data"
 import "./footer.css"
 
 const Footer = () => {
+  const date = new Date()
   return (
     <>
       <section className='footerContact'>
@@ -45,7 +46,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2021 RentUP. Designd By GorkCoder.</span>
+        <span>© {date.getFullYear()} RentUP. Designd By DEPO.</span>
       </div>
     </>
   )
